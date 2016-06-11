@@ -1,0 +1,301 @@
+/*
+Theme Name: Axom Responsive
+Theme URI: http://rajivverma.me/
+Author: Rajiv Verma
+Author URI: https://profiles.wordpress.org/hackernewbie/
+Description: A simple responsive CSS theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: axom-reponsive
+Tags: two-column, simple theme, orange, white, simplistic theme
+This theme, is licensed under the GPL.
+*/
+.container{
+	padding: 20px 10px;
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+    .div-banner-section-parent{
+        display: none;
+    }
+}
+.bg-first-section {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
+.bg-first-section h3 {color: #fff;}
+.bg-first-section p {font-style: italic;}
+/* Remove rounded borders from list */
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+/*Center LOGO Region here*/
+.div-logo{
+    float: center;
+    text-align: center;
+    align-content: center;
+    /*background-color: #dedede;*/
+    margin-top: 30px;
+    opacity: 0.8;
+    width: auto;
+    max-height: 100%;
+    padding-top: 6px;
+    display: none;
+}
+.div-logo>p>img{
+    max-height: 132px;
+    padding-bottom: 6px;
+}
+.wrapper{
+    position: relative;
+    z-index: 999;
+    height: 30px;
+}
+/*The Banner/Slider section*/
+.div-banner-section
+{
+    background-color: #fff;
+    text-align: left !important;
+    text-align: center;
+    position: relative;
+    margin-top: 26px;
+}
+.div-banner-section img{
+	width: 100% !important;
+}
+.img-responsive.img-center {
+  margin: 0 auto;
+
+}
+.div-main-data-wrapper{
+    background-color: #ECECEC;
+    padding: -2em 0;
+}
+.blog-post{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 20px;
+    letter-spacing: 0px !important;
+}
+.blogpost-meta{
+	margin-bottom: 1em;
+    margin-left: 22px;
+}
+.blog-post h3{
+    margin-left: 25px !important;
+    font-size: 30px;
+    margin: 0px 0px 12px 0px;
+}
+.meta-beautify{
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.blog-post-image {
+    margin: 0 0em 1em;
+    overflow: hidden;
+    text-align: center;
+}
+.blog-post-image img{
+	width: 95%;
+}
+.blog-post-text{
+    margin-left: 16px !important;
+}
+.div-blog-bottom{
+    margin-left: -2px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0.8em 1em;
+}
+.div-blog-bottom button{
+    border: 1px solid #7d7d7d;
+    display: inline-block;
+    padding: 0.8em 1em;
+    border-radius: 3px;
+    margin-left: -12px;
+}
+.widgets-area{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 20px;
+    letter-spacing: 0px !important;
+}
+
+/*Toggle Tabs*/
+.nav-tabs li a {
+    color: #777;
+}
+#googleMap {
+    width: 100%; /* Span the entire width of the screen */
+    height: 400px; /* Set the height to 400 pixels */
+    /*-webkit-filter: grayscale(100%);
+    filter: grayscale(100%); /* Change the color of the map to black and white * /*/
+}
+/* Add a dark background color with a little bit see-through */ 
+.navbar {
+    margin-bottom: 0;
+    background-color: #EC5900;            /*Orange Menu*/
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 2px;
+    opacity:0.9;
+    z-index: 1111;
+}
+
+/* Add a color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #ffffff !important;
+    height: 60px;
+    padding: 25px 12px;
+}
+.div-brand-logo{
+    height: 40px;
+    margin-top: 15px;
+}
+.top-logo{
+	height: 100%;
+}
+.navbar-brand>img{
+    /*max-height: 100%;*/
+}
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #FDFFFF !important;
+    background-color:#d15002 !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #C4500A !important;
+    background-color:#ffffff !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #FDFFFF ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: #d15002 !important;
+}
+.div-read-old-posts{
+    padding: 2px;
+    color: #f1f1f1;
+    text-align: center;
+}
+footer#footerBlock{
+	background: #1b1b1b;
+	padding: 3em 0 0;
+	border-top: 3px solid #ff6000;
+}
+footer {
+    background-color: #1B1B1B;
+    /*color: #f5f5f5;*/
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+.div-footer-copyright{
+    background-color: #000000;
+    padding: 20px;
+    color: #666 !important;
+    text-align: center;
+}
+.footer-to-top{
+    float:right;
+}
+.footer-widget-area{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff !important;
+}
+.footer-widget-area{
+    text-align: left;
+    color: #fff;
+}
+.footer-widget>h3{
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+}
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+/* Overwrite default styles of h3 and h4 */
+h3, h4 {
+    margin: 10px 0 30px 0;
+    /*letter-spacing: 10px; */
+    font-size: 20px;
+    color: #111;
+}
+/* Remove rounded borders on input fields */
+.form-control {
+    border-radius: 0;
+}
+.text-left{
+    text-align: left;
+}
+/* Disable the ability to resize textareas */
+textarea {
+    resize: none;
+}
