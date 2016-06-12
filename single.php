@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="div-main-data-wrapper">
 	<div class="container text-left" id="main-section">
 		<div class="row">
@@ -15,7 +14,7 @@
 						</div>
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
-								<img src='<?php echo get_bloginfo('template_directory');?>/images/DSC_0097.jpg' class='img img-responsive' alt='image alt' />
+								<?php the_post_thumbnail( 'medium_large' ); ?>
 							</div>
 						<?php } ?>
 						<div class='blog-post-text'>

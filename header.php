@@ -16,7 +16,7 @@
 	<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
 			<div class='row'>
 				<div class='col-sm-9 div-logo'>
-					<a href="http://localhost/wp/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
+					<a href="http://goandwander.com/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
 				</div>
 				<div class='col-sm-3 top-right-menu'>
 					<div class="col-sm-3">
@@ -66,4 +66,14 @@
 				</nav>
 			</div>
 		</nav>
-
+		<?php if( is_front_page() ) { ?>
+			<div class="container-float text-left div-banner-section-parent" id="main-section">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class='div-banner-section' id='div-banner-section'>
+							<?php echo do_shortcode("[metaslider id=3286]");?>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php } ?>

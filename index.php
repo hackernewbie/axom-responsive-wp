@@ -1,14 +1,6 @@
 <?php get_header(); ?>
-<div class="container-float text-left div-banner-section-parent" id="main-section">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class='div-banner-section' id='div-banner-section'>
-				<?php if( function_exists('cyclone_slider') ) cyclone_slider('3017'); ?>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="div-main-data-wrapper">
+
+<div class="div-main-data-wrapper-for-homepage">
 	<div class="container text-left" id="main-section">
 		<div class="row">
 			<div class="col-sm-9">
@@ -23,11 +15,11 @@
 						</div>
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
-								<img src='<?php echo get_bloginfo('template_directory');?>/images/DSC_0097.jpg' class='img img-responsive' alt='image alt' />
+								<?php the_post_thumbnail( 'medium_large' ); ?>
 							</div>
 						<?php } ?>
 						<div class='blog-post-text'>
-							<?php the_content(); ?>
+							<?php the_excerpt(); ?>
 						</div>
 						<div class='div-blog-bottom'>
 							<a href="<?php the_permalink(); ?>" class="btn btn-default btn-lg btn-read-more">

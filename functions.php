@@ -28,4 +28,6 @@ register_sidebar( array(
 /*Add additional sidebar(s) below this*/
 }
 add_action( 'widgets_init', 'sidebar_widgets_init' );
+/*Add Featured Post support*/
+add_theme_support( 'post-thumbnails' );
 ?>
