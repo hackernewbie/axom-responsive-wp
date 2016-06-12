@@ -14,7 +14,20 @@
 	</head>
 	<?php wp_head(); ?>
 	<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!-- <body id="homePage"> -->
+			<div class='row'>
+				<div class='col-sm-9 div-logo'>
+					<a href="http://localhost/wp/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
+				</div>
+				<div class='col-sm-3 top-right-menu'>
+					<div class="col-sm-3">
+						<?php if ( is_active_sidebar( 'top-sm-widget-area' ) ) : ?>
+							<div id="primary-sidebar" class="top-right-widgets" role="complementary">
+								<?php dynamic_sidebar( 'top-sm-widget-area' ); ?>
+							</div><!-- #top-right-sidebar -->
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>	
 		<nav id='div-top-menu' class='div-top-menu'>
 			<div class='wrapper'>
 				<!-- The Main Menu -->
@@ -30,7 +43,8 @@
 				      </button>
 				      	<a class="navbar-brand" href="<?php echo home_url(); ?>">
 					      	<div class='div-brand-logo'>
-					                <img src='<?php echo get_bloginfo('template_directory');?>/images/logo.png' class='top-logo' />
+					                <!--<h1><a href="#"><?php bloginfo('name');?></a></h1>
+									<h2><?php bloginfo('description');?></h2> -->
 			                </div>
 		            	</a>
 				    </div>
@@ -52,7 +66,4 @@
 				</nav>
 			</div>
 		</nav>
-		<div id='div-logo' class='div-logo row'>
-			<p><img src='<?php echo get_bloginfo('template_directory');?>/images/logo.png' class='img-center img img-responsive'/></p>
-			<!--<p>Site Info can be added here.</p>-->
-		</div>
+

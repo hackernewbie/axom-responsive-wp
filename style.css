@@ -3,7 +3,7 @@ Theme Name: Axom Responsive
 Theme URI: http://rajivverma.me/
 Author: Rajiv Verma
 Author URI: https://profiles.wordpress.org/hackernewbie/
-Description: A simple responsive wordpress theme
+Description: A simple two-column responsive wordpress theme based on the AXOM CSS Theme. Both themes can be downloded from <a href='http://rajivverma.me/'>http://rajivverma.me/</a>
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,69 +14,24 @@ This theme, like WordPress, is licensed under the GPL.
 .container{
 	padding: 20px 10px;
 }
-.carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-
-.carousel-caption h3 {
-    color: #fff !important;
-}
-
 @media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
     .div-banner-section-parent{
-        display: none;
+        /*display: none;*/
     }
-}
-.bg-first-section {
-    background: #2d2d30;
-    color: #bdbdbd;
-}
-.bg-first-section h3 {color: #fff;}
-.bg-first-section p {font-style: italic;}
-/* Remove rounded borders from list */
-.list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-/* Remove border and add padding to thumbnails */
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
-
-.thumbnail p {
-    margin-top: 15px;
-    color: #555;
 }
 /*Center LOGO Region here*/
 .div-logo{
-    float: center;
-    text-align: center;
-    align-content: center;
-    /*background-color: #dedede;*/
-    margin-top: 30px;
-    opacity: 0.8;
-    width: auto;
-    max-height: 100%;
-    padding-top: 6px;
-    display: none;
+    float: left;
+    height: 185px;
+    margin-top: 0px;
 }
-.div-logo>p>img{
-    max-height: 132px;
+.div-logo>a>img{
+    max-height: 100%;
+    padding-left: 5px;
     padding-bottom: 6px;
+}
+.top-right-widget-area{
+
 }
 .wrapper{
     position: relative;
@@ -90,7 +45,7 @@ This theme, like WordPress, is licensed under the GPL.
     text-align: left !important;
     text-align: center;
     position: relative;
-    margin-top: 26px;
+    /*margin-top: 46px; Adjust this depending on the menu's height*/
 }
 .div-banner-section img{
 	width: 100% !important;
@@ -110,14 +65,21 @@ This theme, like WordPress, is licensed under the GPL.
     margin-bottom: 20px;
     letter-spacing: 0px !important;
 }
-.blogpost-meta{
-	margin-bottom: 1em;
-    margin-left: 22px;
-}
-.blog-post h3{
-    margin-left: 25px !important;
+.blog-post h2,h3{
+    margin-left: 15px !important;
     font-size: 30px;
-    margin: 0px 0px 12px 0px;
+    margin: 15px 10px 15px 0px;
+}
+.blog-post a{
+    text-decoration: none;
+    color: #000;
+}
+.blog-post a:hover{
+    color: #EC5900 ;
+}
+.blogpost-meta{
+    margin-bottom: 1em;
+    margin-left: 22px;
 }
 .meta-beautify{
 	display: inline-block;
@@ -159,6 +121,10 @@ This theme, like WordPress, is licensed under the GPL.
     padding: 0.8em 1em;
     border-radius: 3px;
     margin-left: -12px;
+}
+.btn-read-more:hover{
+    /*background-color: #EC5900;
+    color: #000;*/
 }
 .widget-area{
     padding: 10px;
@@ -266,17 +232,15 @@ footer a {
     float:right;
 }
 .footer-widget-area{
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
 }
-.footer-widget-area{
-    text-align: left;
-    color: #fff;
-}
+
 .footer-widget>h3{
     text-align: center;
     color: #fff;
-    max-width: 80%;
+    max-width: 100%;
 }
 footer a:hover {
     color: #777;

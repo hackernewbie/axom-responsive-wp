@@ -29,15 +29,12 @@
 						<div class='blog-post-text'>
 							<?php the_content(); ?>
 						</div>
-						<div class='div-blog-bottom'>
-							<a href="<?php the_permalink(); ?>" class="btn btn-default btn-lg btn-read-more">
-						    	<span class="glyphicon glyphicon glyphicon-check"></span>Read More 
-					        </a>
-						</div>
+						
 					</div>
 				<?php endwhile; ?>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
+	<?php comments_template(); ?>
 <?php get_footer(); ?>

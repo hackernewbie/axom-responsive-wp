@@ -1,13 +1,4 @@
 <?php get_header(); ?>
-<div class="container-float text-left div-banner-section-parent" id="main-section">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class='div-banner-section' id='div-banner-section'>
-				<img src='<?php echo get_bloginfo('template_directory');?>/images/10.jpg' class='img img-responsive'/>
-			</div>
-		</div>
-	</div>
-</div>
 <div class="div-main-data-wrapper">
 	<div class="container text-left" id="main-section">
 		<div class="row">
@@ -28,11 +19,6 @@
 						<?php } ?>
 						<div class='blog-post-text'>
 							<?php the_content(); ?>
-						</div>
-						<div class='div-blog-bottom'>
-							<a href="<?php the_permalink(); ?>" class="btn btn-default btn-lg btn-read-more">
-						    	<span class="glyphicon glyphicon glyphicon-check"></span>Read More 
-					        </a>
 						</div>
 					</div>
 				<?php endwhile; ?>
