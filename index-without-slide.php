@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class='div-banner-section' id='div-banner-section'>
-				<?php if( function_exists('cyclone_slider') ) cyclone_slider('3017'); ?>
+				<img src='<?php echo get_bloginfo('template_directory');?>/images/10.jpg' class='img img-responsive'/>
 			</div>
 		</div>
 	</div>

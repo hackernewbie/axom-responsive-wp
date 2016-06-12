@@ -1,13 +1,5 @@
 <?php get_header(); ?>
-<div class="container-float text-left div-banner-section-parent" id="main-section">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class='div-banner-section' id='div-banner-section'>
-				<img src='<?php echo get_bloginfo('template_directory');?>/images/10.jpg' class='img img-responsive'/>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="div-main-data-wrapper">
 	<div class="container text-left" id="main-section">
 		<div class="row">

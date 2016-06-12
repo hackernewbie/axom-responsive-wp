@@ -1,71 +1,79 @@
 <?php
-/* This comments template */
+/**
+ * The template for displaying comments
+ *
+ * The area of the page that contains both current comments
+ * and the comment form.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
 
-if ( post_password_required() )
+/*
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the comments.
+ */
+if ( post_password_required() ) {
     return;
+}
 ?>
-<div id="comments" class="comments-area comments">
+
+<div id="comments" class="comments-area">
+
     <?php if ( have_comments() ) : ?>
-        <h3 class="common-title comments-title">
-            <?php comments_number( __('No Comment', 'kotha' ), __('One Comments', 'kotha' ), __('% Comments',
-                'kotha' ) ); ?>
-        </h3>
+        <h2 class="comments-title">
+            <?php
+                $comments_number = get_comments_number();
+                if ( 1 === $comments_number ) {
+                    /* translators: %s: post title */
+                    printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'AXOM' ), get_the_title() );
+                } else {
+                    printf(
+                        /* translators: 1: number of comments, 2: post title */
+                        _nx(
+                            '%1$s thought on &ldquo;%2$s&rdquo;',
+                            '%1$s thoughts on &ldquo;%2$s&rdquo;',
+                            $comments_number,
+                            'comments title',
+                            'axom'
+                        ),
+                        number_format_i18n( $comments_number ),
+                        get_the_title()
+                    );
+                }
+            ?>
+        </h2>
 
-        <ul class="comment-list">
+        <?php the_comments_navigation(); ?>
 
+        <ol class="comment-list">
             <?php
                 wp_list_comments( array(
-                    'style'       => 'ul',
+                    'style'       => 'ol',
                     'short_ping'  => true,
-                    'callback' => 'kotha_comment',
-                    'avatar_size' => 75
+                    'avatar_size' => 42,
                 ) );
             ?>
-        </ul><!-- .comment-list -->
+        </ol><!-- .comment-list -->
 
-        <?php
-            // Are there comments to navigate through?
-            if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
-        ?>
-        <nav class="navigation comment-navigation" role="navigation">
-            <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'kotha' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'kotha' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'kotha' ) ); ?></div>
-        </nav><!-- .comment-navigation -->
-        <?php endif; // Check for comment navigation ?>
+        <?php the_comments_navigation(); ?>
 
-        <?php if ( ! comments_open() && get_comments_number() ) : ?>
-        <p class="no-comments"><?php _e( 'Comments are closed.' , 'kotha' ); ?></p>
-        <?php endif; ?>
-
-    <?php endif; // have_comments() ?>
+    <?php endif; // Check for have_comments(). ?>
 
     <?php
-        $commenter = wp_get_current_commenter();
-        $req = get_option( 'require_name_email' );
-        $aria_req = ( $req ? " aria-required='true'" : '' );
-        $fields =  array(
-            'author' => '<div class="col-md-4"><input id="author" name="author" type="text" placeholder="'. __( 'Name
-             *', 'kotha' ) .'" value="" size="30"' . $aria_req . '/></div>',
-            'email'  => '<div class="col-md-4"><input id="email" name="email" type="text" placeholder="'. __( 'Email
-            *', 'kotha' ) .'" value="" size="30"' . $aria_req . '/></div>',
-            'url'  => '<div class="col-md-4"><input id="url" name="url" type="text" placeholder="'. __( 'Website',
-                    'kotha' ) .'" value="" size="30"/></div>',
-        );
-
-        
-         
-        $comments_args = array(
-            'fields' =>  $fields,
-            'comment_notes_before'      => '',
-            'comment_notes_after'       => '',
-            'comment_field'             => '<div class="clearfix"></div><div class="col-md-12"><textarea id="comment" placeholder="'. __( 'Write your comment...', 'kotha' ) .'" name="comment" aria-required="true"></textarea></div>',
-            'label_submit'              => __('Post Comment', 'kotha')
-        );
-        ob_start();
-        comment_form($comments_args);
-        $search = array('class="comment-form"','class="form-submit"');
-        $replace = array('class="comment-form row"','class="form-submit col-md-12"');
-        echo str_replace($search,$replace,ob_get_clean());
+        // If comments are closed and there are comments, let's leave a little note, shall we?
+        if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
     ?>
-</div>
+        <p class="no-comments"><?php _e( 'Comments are closed.', 'axom' ); ?></p>
+    <?php endif; ?>
+
+    <?php
+        comment_form( array(
+            'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
+            'title_reply_after'  => '</h2>',
+        ) );
+    ?>
+
+</div><!-- .comments-area -->
