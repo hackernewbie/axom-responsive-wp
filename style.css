@@ -38,7 +38,6 @@ This theme, like WordPress, is licensed under the GPL.
     height: 185px;
     margin-top: 0px;
     margin-right: 15px;
-    background-color: yellow;
 }
 .wrapper{
     position: relative;
@@ -60,6 +59,10 @@ This theme, like WordPress, is licensed under the GPL.
 .img-responsive.img-center {
   margin: 0 auto;
 
+}
+.div-main-data-wrapper-for-homepage{
+    background-color: #ECECEC;
+    padding: 2em 0;
 }
 .div-main-data-wrapper{
     background-color: #ECECEC;

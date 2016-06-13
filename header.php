@@ -18,7 +18,7 @@
 				<div class='col-sm-9 div-logo'>
 					<a href="http://goandwander.com/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
 				</div>
-				<div class='col-sm-3 top-right-menu'>
+				<div class='col-sm-3 top-right-menu top-right-widget-area'>
 					<div class="col-sm-3">
 						<?php if ( is_active_sidebar( 'top-sm-widget-area' ) ) : ?>
 							<div id="primary-sidebar" class="top-right-widgets" role="complementary">
