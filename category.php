@@ -12,7 +12,7 @@ get_header(); ?>
 				if ( have_posts() ) : ?>
 					
 					<header class="archive-header">
-						<h1 class="archive-title">Category: <?php single_cat_title( '', true ); ?></h1>
+						<h1 class="archive-title">Destination: <?php single_cat_title( '', true ); ?></h1>
 						<?php
 						// Display optional category description
 						 if ( category_description() ) : ?>

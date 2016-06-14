@@ -19,6 +19,10 @@ This theme, like WordPress, is licensed under the GPL.
         /*display: none;*/
     }
 }
+.div-banner-section-parent{
+    padding-right:0px;
+    padding-left:0px;
+}
 /*Center LOGO Region here*/
 .div-logo{
     float: left;
@@ -35,7 +39,7 @@ This theme, like WordPress, is licensed under the GPL.
 }
 .top-right-widget-area{         /*Height must be same as that of .div-logo above*/
     float: right;
-    height: 185px;
+    height: 145px;
     margin-top: 0px;
     margin-right: 15px;
 }
@@ -228,6 +232,13 @@ This theme, like WordPress, is licensed under the GPL.
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
     background-color: #d15002 !important;
+}
+.textwidget{
+    margin-left: 10px;
+}
+.caption-wrap{
+    background: none !important;    /*This is hooked to the Meta slider*/
+    text-align: right;
 }
 .div-read-old-posts{
     padding: 2px;
