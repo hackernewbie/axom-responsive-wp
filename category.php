@@ -3,7 +3,7 @@
 * A Simple Category Template
 */
 get_header(); ?> 
-<div id="content div-main-data-wrapper" role="main" class="div-main-data-wrapper">
+<div id="content div-main-data-wrapper-for-category" role="main" class="div-main-data-wrapper-for-category">
 <div class="container text-left" id="main-section">
 		<div class="row">
 			<div class="col-sm-9">

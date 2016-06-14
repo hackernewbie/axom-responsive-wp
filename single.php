@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="div-main-data-wrapper">
-	<div class="container text-left" id="main-section">
+	<div class="text-left" id="main-section">
 		<div class="row">
 			<div class="col-sm-9">
 				<?php while(have_posts()) : the_post();?>

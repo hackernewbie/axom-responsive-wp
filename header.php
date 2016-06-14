@@ -67,7 +67,7 @@
 			</div>
 		</nav>
 		<?php if( is_front_page() ) { ?>
-			<div class="container-float text-left div-banner-section-parent" id="main-section">
+			<div class="container-fluid text-left div-banner-section-parent" id="main-section">
 				<div class="row">
 					<div class="col-sm-12">
 						<div class='div-banner-section' id='div-banner-section'>

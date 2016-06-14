@@ -63,10 +63,22 @@ This theme, like WordPress, is licensed under the GPL.
 .div-main-data-wrapper-for-homepage{
     background-color: #ECECEC;
     padding: 2em 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.div-main-data-wrapper-for-category{
+    background-color: #ECECEC;
+    padding: 2em 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
 }
 .div-main-data-wrapper{
     background-color: #ECECEC;
     padding: 2em 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 60px;
 }
 .blog-post{
     padding: 10px;
@@ -260,8 +272,11 @@ footer a:hover {
     color: #777;
     text-decoration: none;
 }
+body, html { overflow-x:hidden; }; /*Get rid of the howrizontal scrolls*/
 body {
     font: 400 15px/1.8 Lato, sans-serif;
+    /*font-family: 'Open Sans', sans-serif;
+    font-weight: 400;*/
     color: #777;
 }
 .navbar {
