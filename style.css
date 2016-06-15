@@ -128,12 +128,20 @@ This theme, like WordPress, is licensed under the GPL.
     margin-left: 16px !important;
     max-width: 100%;
 }
-.wp-caption{
-    width: auto !important; 
+.wp-caption-text{
+    text-align: center;
+    color: #696969;
 }
-.wp-caption img{
+.wp-caption{
+    width: auto !important;         /*Post image caption*/
+    color: #696969;
+}
+.wp-caption img{                    /*Caption of Meta Slider*/
     display: block;
     margin: 0 auto 3px auto;
+}
+.textwidget img{
+    width: 270px;
 }
 .div-blog-bottom{
     margin-left: -2px;
