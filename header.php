@@ -15,11 +15,11 @@
 	<?php wp_head(); ?>
 	<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
 			<div class='row'>
-				<div class='col-sm-9 div-logo'>
+				<div class='col-sm-6 div-logo'>
 					<a href="http://goandwander.com/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
 				</div>
-				<div class='col-sm-3 top-right-menu top-right-widget-area'>
-					<div class="col-sm-3">
+				<div class='col-sm-6 top-right-menu'>
+					<div class="col-sm-6 top-right-widget-area">
 						<?php if ( is_active_sidebar( 'top-sm-widget-area' ) ) : ?>
 							<div id="primary-sidebar" class="top-right-widgets" role="complementary">
 								<?php dynamic_sidebar( 'top-sm-widget-area' ); ?>

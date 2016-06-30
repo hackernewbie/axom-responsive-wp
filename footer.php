@@ -2,23 +2,22 @@
 			</div>
 		</div>
 		<div class='div-read-old-posts' id='div-read-old-posts'>
-			Old Posts
-			</div>
+		
 		<footer class="text-left" id="footerBlock">
 			<div class='footer-wrapper'>
 				<div class='container-fluid footer-widget-area'>
 					<div class="row bs-row">
 						<div class="col-sm-4 footer-widget-1 footer-widget">
-							<h3>Widget 1</h3>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+							<h3></h3>
+							<p></p>
 						</div>
 						<div class="col-sm-4 footer-widget-2 footer-widget">
-						<h3>Widget 2</h3>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						<h3></h3>
+							<p></p>
 						</div>
 						<div class="col-sm-4 footer-widget-3 footer-widget">
-						<h3>Widget 3</h3>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						<h3></h3>
+							<p></p>
 						</div>
 					</div>
 				</div>

@@ -1,10 +1,7 @@
 <?php
-/**
-* A Simple Category Template
-*/
 get_header(); ?> 
 <div id="content div-main-data-wrapper-for-category" role="main" class="div-main-data-wrapper-for-category">
-<div class="container text-left" id="main-section">
+<div class="text-left" id="main-section">
 		<div class="row">
 			<div class="col-sm-9">
 				<?php 
@@ -44,8 +41,16 @@ get_header(); ?>
 					        </a>
 						</div>
 					</div>
-					<?php endwhile; 
-				else: ?>
+					<?php endwhile; ?>
+					<div class="bottom-nav">
+						<div class="bottom-prev-post">
+							<?php next_posts_link( 'Previous posts' ); ?>
+						</div>
+						<div class="bottom-next-post">
+							<?php previous_posts_link( 'Newer posts' ); ?>
+						</div>
+					</div>
+				<?php else: ?>
 					<p>Sorry, no posts matched your criteria.</p>
 				<?php endif; ?>
 			</div>

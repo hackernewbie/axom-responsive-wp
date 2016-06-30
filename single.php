@@ -23,9 +23,18 @@
 						
 					</div>
 				<?php endwhile; ?>
+				<div class="bottom-nav">
+					<div class="bottom-prev-post">
+						<?php previous_post_link(); ?>
+					</div>
+					<div class="bottom-next-post">
+						<?php next_post_link(); ?>
+					</div>
+				</div>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>
+		
 	</div>
 	<?php comments_template(); ?>
 <?php get_footer(); ?>

@@ -15,7 +15,9 @@
 						</div>
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
+							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail( 'medium_large' ); ?>
+							</a>
 							</div>
 						<?php } ?>
 						<div class='blog-post-text'>
@@ -28,6 +30,14 @@
 						</div>
 					</div>
 				<?php endwhile; ?>
+				<div class="bottom-nav">
+					<div class="bottom-prev-post">
+						<?php next_posts_link( 'Previous posts' ); ?>
+					</div>
+					<div class="bottom-next-post">
+						<?php previous_posts_link( 'Newer posts' ); ?>
+					</div>
+				</div>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>
