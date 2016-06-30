@@ -156,6 +156,9 @@ This theme, like WordPress, is licensed under the GPL.
 .textwidget img{
     width: 270px;
 }
+.textwidget p{
+    text-align: justify;
+}
 .div-blog-bottom{
     margin-left: -2px;
     margin-bottom: 15px;
