@@ -40,5 +40,20 @@ register_sidebar( array(
 add_action( 'widgets_init', 'sidebar_widgets_init' );
 /*Add Featured Post support*/
 add_theme_support( 'post-thumbnails' );
-
+/*Adding views column on the admin panel*/
+add_filter('manage_posts_columns', 'my_columns');
+function my_columns($columns) {
+    $columns['views'] = 'Views';
+    return $columns;
+}
+add_action('manage_posts_custom_column',  'my_show_columns');
+function my_show_columns($name) {
+    global $post;
+    switch ($name) {
+        case 'views':
+            $views = get_post_meta($post->ID, 'views', true);
+            echo $views;
+    }
+}
+/*Adding views column on the admin panel*/
 ?>

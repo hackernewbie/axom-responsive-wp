@@ -39,9 +39,18 @@ This theme, like WordPress, is licensed under the GPL.
 }
 .top-right-widget-area{         /*Height must be same as that of .div-logo above*/
     float: right;
-    height: 145px;
+    max-height: 145px;
     margin-top: 0px;
     margin-right: 15px;
+    padding-top: 6px;
+}
+.top-right-menu{
+    float: right;
+    padding-top: 25px;
+}
+.top-right-widget-area img{
+    max-width: 32px !important;
+    max-height: 32px;
 }
 .wrapper{
     position: relative;
@@ -117,16 +126,18 @@ This theme, like WordPress, is licensed under the GPL.
     transform: translate(0, 0);
 }
 .featured-image {
-    margin: 0 0em 1em;
+    /*margin: 0 0em 1em;*/
+    margin-left: 24px !important;
     overflow: hidden;
     text-align: center;
+    max-width: 93%;
 }
 .blog-post-text a>img{
     max-width: 100%;
 }
 .blog-post-text{
-    margin-left: 18px !important;
-    max-width: 95%;
+    margin-left: 24px !important;
+    max-width: 93%;
     /*Specific to GoAndWander*/
     font: normal normal 20px PT Sans-serif !important;
 }

@@ -19,7 +19,7 @@
 					<a href="http://goandwander.com/"><img src='<?php echo get_bloginfo('template_directory');?>/images/logo1.png' class='concept-logo img img-responsive' /></a>				
 				</div>
 				<div class='col-sm-6 top-right-menu'>
-					<div class="col-sm-6 top-right-widget-area">
+					<div class="top-right-widget-area">
 						<?php if ( is_active_sidebar( 'top-sm-widget-area' ) ) : ?>
 							<div id="primary-sidebar" class="top-right-widgets" role="complementary">
 								<?php dynamic_sidebar( 'top-sm-widget-area' ); ?>
