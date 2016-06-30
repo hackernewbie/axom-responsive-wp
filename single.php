@@ -34,7 +34,6 @@
 			</div>
 			<?php get_sidebar(); ?>
 		</div>
-		
 	</div>
 	<?php comments_template(); ?>
 <?php get_footer(); ?>
