@@ -28,7 +28,7 @@
 				<a class="up-arrow footer-to-top" href="#homePage" data-toggle="tooltip" title="TO TOP">
 				<span class="glyphicon glyphicon-chevron-up"></span>
 				</a>
-				<p>&copy; 2016 Copyrigt Text | Developed by <a href="http://www.rajivverma.me" data-toggle="tooltip" title="Rajiv Verma">Rajiv Verma</a></p> 
+				<p>&copy; 2016 Anupam Chakraborty | Designed &amp; Developed by <a href="http://www.rajivverma.me" data-toggle="tooltip" title="Rajiv Verma">Rajiv Verma</a></p> 
 			</div>
 		</footer>	
 	</body>
