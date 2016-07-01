@@ -14,8 +14,14 @@
 						</div>
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
-								<?php the_post_thumbnail( 'medium_large' );
-								echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+								<div class='featured-image'>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail( 'medium_large' ); ?>
+								</a>
+								<div class='featured-image-caption wp-caption-text'>
+									<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+								</div>
+							</div>
 							</div>
 						<?php } ?>
 						<div class='blog-post-text'>
