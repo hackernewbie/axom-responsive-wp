@@ -14,7 +14,8 @@
 						</div>
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
-								<?php the_post_thumbnail( 'medium_large' ); ?>
+								<?php the_post_thumbnail( 'medium_large' );
+								echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
 							</div>
 						<?php } ?>
 						<div class='blog-post-text'>

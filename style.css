@@ -18,6 +18,9 @@ This theme, like WordPress, is licensed under the GPL.
     .div-banner-section-parent{
         /*display: none;*/
     }
+    .top-right-menu{
+        float: left !important;   
+    }
 }
 .div-banner-section-parent{
     padding-right:0px;
