@@ -16,7 +16,8 @@
 						<?php if(has_post_thumbnail()) { ?>
 							<div class='featured-image'>
 							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail( 'medium_large' ); ?>
+								<?php the_post_thumbnail( 'medium_large' );
+								echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
 							</a>
 							</div>
 						<?php } ?>

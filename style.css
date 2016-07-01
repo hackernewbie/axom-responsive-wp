@@ -294,6 +294,10 @@ This theme, like WordPress, is licensed under the GPL.
     color: #fff !important;
     text-decoration: none;
 }
+.caption{
+    background-color: #000;
+    opacity: 0.7;
+}
 .div-read-old-posts{
     padding: 2px;
     color: #f1f1f1;
