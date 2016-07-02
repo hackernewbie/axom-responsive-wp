@@ -136,19 +136,17 @@ This theme, like WordPress, is licensed under the GPL.
     width: 100%;
 }
 .featured-image a>img{
-    width: 100%;
-    /*max-height: 480px;*/
+    width: 88%;     /*Right size for single page images would be 90%*/
 }
-.featured-image img{
-    width: 100%;
-    /*max-height: 480px;*/
+.featured-image img{        /*This is in the post page.*/
+    width: 88%;
 }
 .blog-post-text img{
-    max-width: 100%;
-    max-height: 480px;
-    /*width: 93%;*/
+    max-width: 90%;
 }
-
+.blog-post-text a>img{
+     max-width: 90% !important;
+}
 .blog-post-text{
     /*margin-left: 8px !important;
     max-width: 98%;*/
@@ -160,7 +158,8 @@ This theme, like WordPress, is licensed under the GPL.
     color: #696969;
 }
 .wp-caption{
-    width: auto !important;         /*Post image caption*/
+    /*width: auto !important;*/         /*Post image caption*/
+    width: 100% !important;
     color: #696969;
 }
 .wp-caption img{                    /*Caption of Meta Slider*/
@@ -400,5 +399,5 @@ textarea {
 img {
     height: auto;
    /* height: 95%;*/
-    max-width: 100% !important;
+    max-width: 100%;
 }
