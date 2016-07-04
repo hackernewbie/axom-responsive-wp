@@ -33,12 +33,12 @@
 						</div>
 					</div>
 				<?php endwhile; ?>
-				<div class="bottom-nav">
-					<div class="bottom-prev-post">
+				<div class="bottom-nav-parent">
+					<div class="bottom-prev-post bottom-nav">
 						<?php next_posts_link( '<span class="meta-nav">←</span> Older Posts' ); ?>
 					</div>
-					<div class="bottom-next-post">
-						<?php previous_posts_link( 'Newer posts <span class="meta-nav">→</span> ' ); ?>
+					<div class="bottom-next-post bottom-nav">
+						<?php previous_posts_link( 'Newer posts <span class="meta-nav">→</span>   ' ); ?>
 					</div>
 				</div>
 			</div>

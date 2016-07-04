@@ -26,12 +26,12 @@
 						
 					</div>
 				<?php endwhile; ?>
-				<div class="bottom-nav">
-					<div class="bottom-prev-post">
-						<?php previous_post_link(); ?>
+				<div class="bottom-nav-parent">
+					<div class="bottom-prev-post bottom-nav">
+						<?php previous_post_link('%link', '<span class="meta-nav">←</span> %title', TRUE); ?>  
 					</div>
-					<div class="bottom-next-post">
-						<?php next_post_link(); ?>
+					<div class="bottom-next-post bottom-nav">
+						<?php next_post_link('%link', '%title <span class="meta-nav">→</span> ', TRUE); ?>  
 					</div>
 				</div>
 			</div>
