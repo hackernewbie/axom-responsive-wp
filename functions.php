@@ -55,5 +55,4 @@ function my_show_columns($name) {
             echo $views;
     }
 }
-/*Adding views column on the admin panel*/
 ?>
