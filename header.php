@@ -11,8 +11,9 @@
 	    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	    <!-- <link rel='stylesheet' id='google-font-open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' type='text/css' media='all' />-->
+		<?php wp_head(); ?>
 	</head>
-	<?php wp_head(); ?>
+	
 	<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
 			<div class='row'>
 				<div class='col-sm-6 div-logo'>
