@@ -6,3 +6,12 @@ a mistyped address
 an out-of-date link
 
 Search bar
+	Not Found
+Sorry, but the page you were trying to view does not exist.
+It looks like this was the result of either:
+
+a mistyped address
+an out-of-date link
+
+Search bar
+<?php get_search_form(); ?>
